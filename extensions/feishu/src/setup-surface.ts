@@ -15,7 +15,7 @@ import {
   type ChannelSetupWizard,
   type OpenClawConfig,
   type SecretInput,
-} from "openclaw/plugin-sdk/setup";
+} from "openclaw/plugin-sdk/setup-tools";
 import { listFeishuAccountIds, resolveFeishuCredentials } from "./accounts.js";
 import { probeFeishu } from "./probe.js";
 import { feishuSetupAdapter } from "./setup-core.js";
