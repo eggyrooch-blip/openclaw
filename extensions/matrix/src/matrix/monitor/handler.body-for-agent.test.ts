@@ -9,9 +9,8 @@ import {
 import { EventType, type MatrixRawEvent } from "./types.js";
 
 vi.mock("../../../runtime-api.js", async () => {
-  const actual = await vi.importActual<typeof import("../../../runtime-api.js")>(
-    "../../../runtime-api.js",
-  );
+  const actual =
+    await vi.importActual<typeof import("../../../runtime-api.js")>("../../../runtime-api.js");
   return {
     ...actual,
     dispatchReplyFromConfigWithSettledDispatcher: vi.fn().mockResolvedValue({
